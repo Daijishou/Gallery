@@ -48,8 +48,8 @@ declare module '$env/static/private' {
 	export const EDITOR: string;
 	export const DBUS_STARTER_BUS_TYPE: string;
 	export const PWD: string;
-	export const LOGNAME: string;
 	export const XDG_SESSION_DESKTOP: string;
+	export const LOGNAME: string;
 	export const XDG_SESSION_TYPE: string;
 	export const npm_config_init_module: string;
 	export const SYSTEMD_EXEC_PID: string;
@@ -83,8 +83,8 @@ declare module '$env/static/private' {
 	export const npm_config_prefix: string;
 	export const ZDOTDIR: string;
 	export const USER: string;
-	export const VSCODE_GIT_IPC_HANDLE: string;
 	export const CUDA_PATH: string;
+	export const VSCODE_GIT_IPC_HANDLE: string;
 	export const DISPLAY: string;
 	export const npm_lifecycle_event: string;
 	export const SHLVL: string;
@@ -166,8 +166,8 @@ declare module '$env/dynamic/private' {
 		EDITOR: string;
 		DBUS_STARTER_BUS_TYPE: string;
 		PWD: string;
-		LOGNAME: string;
 		XDG_SESSION_DESKTOP: string;
+		LOGNAME: string;
 		XDG_SESSION_TYPE: string;
 		npm_config_init_module: string;
 		SYSTEMD_EXEC_PID: string;
@@ -201,8 +201,8 @@ declare module '$env/dynamic/private' {
 		npm_config_prefix: string;
 		ZDOTDIR: string;
 		USER: string;
-		VSCODE_GIT_IPC_HANDLE: string;
 		CUDA_PATH: string;
+		VSCODE_GIT_IPC_HANDLE: string;
 		DISPLAY: string;
 		npm_lifecycle_event: string;
 		SHLVL: string;
