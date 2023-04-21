@@ -9,18 +9,18 @@
 		// const ref = document.referrer;
   		// goto(ref.length > 0 ? ref : "/")
 		// alert()
-		goto("../")
+		// goto("../")
 		// navigate(-1)
 		// history.back()
 	}
 </script>
 
 <article>
-	<p><a on:click={onBackClick}>&laquo; back to list</a></p>
+	<p><a class="back-link" on:click={onBackClick} href="../">&laquo; back to list</a></p>
 	{#if index.previewThumbnailFilename}
-    	<img class="thumb" src="{rawSourceUri}/themes/platform_wallpapers_packs/{slug}/{index.previewThumbnailFilename}" alt="{index.platformWallpapersPackName}"/>
+    	<img class="thubnail" src="{rawSourceUri}/themes/platform_wallpapers_packs/{slug}/{index.previewThumbnailFilename}" alt="{index.platformWallpapersPackName}"/>
 	{:else}
-		<img class="thumb" alt="{index.platformWallpapersPackName}"/>
+		<img class="thubnail" alt="{index.platformWallpapersPackName}"/>
 	{/if}
 	<h1>{index.name?index.name:"Loading…"}</h1>
 	{#if index.name} 
@@ -64,8 +64,11 @@
 		width: 100%;
 		border-radius: 8px;
 	}
+	a.back-link {
+		color: white;
+	}
 
-	img.thumb {
+	img.thubnail {
 		height: 128px;
 		width: 128px;
 		border-radius: 8px;
