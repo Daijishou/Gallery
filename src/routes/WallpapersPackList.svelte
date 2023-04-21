@@ -55,7 +55,7 @@
 		{/if}
 	{/each}
 {:else}
-	<p class="loading">Loading...</p>
+	<p class="loading">Fetching index…</p>
 {/if}
 
 <style>
@@ -84,6 +84,6 @@
 		border-bottom: 1px solid gray;
 	}
 	p.loading {
-		padding: 12px 24px 12px 24px;
+		padding: 12px 32px 12px 32px;
 	}
 </style>

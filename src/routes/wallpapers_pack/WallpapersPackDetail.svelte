@@ -1,5 +1,6 @@
 <script>
 	// import { useNavigate } from "svelte-navigator";
+	import { goto } from '$app/navigation';
 	import { rawSourceUri } from '../../constants';
 	export let index;
 	export let slug;
@@ -8,9 +9,9 @@
 		// const ref = document.referrer;
   		// goto(ref.length > 0 ? ref : "/")
 		// alert()
-		// goto("/")
+		goto("../")
 		// navigate(-1)
-		history.back()
+		// history.back()
 	}
 </script>
 
