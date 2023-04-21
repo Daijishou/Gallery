@@ -1,16 +1,30 @@
+html {
+	overflow-y: scroll;
+}
 body {
 	background-color:gray;
 	font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	padding: 0px 12px;
 }
+/* #root {
+	position: absolute;
+	overflow-y: scroll;
+	height: 100vh;
+	width: 100vh;
+} */
 div.background {
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	left: 0;
 	top: 0;
-	transform: scale(1.2);
+	/* transform: scale(1.0); */
 	/* filter: blur(40px); */
-	background-image: url(https://i.pinimg.com/originals/a3/3f/88/a33f887a52eced78d356c06b600b05c8.gif);
+	/* background-image: url(https://celcliptipsprod.s3-ap-northeast-1.amazonaws.com/tips_article_body/94b7/1574819/006e9f92a41990a60080116a98936d99); */
+	background-image: url(https://raw.githubusercontent.com/TapiocaFox/Daijishou/main/themes/platform_wallpapers_packs/mount-niitaka/mount_niitaka.jpg);
+	/* background-image: url(https://i.pinimg.com/originals/85/f4/82/85f4820659e7bc2f94a5e735e3336549.gif); */
+	/* background-image: url(https://i.pinimg.com/originals/f5/b6/e5/f5b6e5d595fa92516bd513780be17e6e.gif); */
+	/* background-image: url(https://gifdb.com/images/high/tidal-waves-aesthetic-pfp-jbq1ipdd0vcmpfyc.gif); */
 	background-size: cover;
 	background-position: center;
 	/* background-color: #DFDBE5; */
@@ -21,7 +35,7 @@ main {
 	position: relative;
 	max-width: 850px;
 	margin: auto;
-	min-height: 101vh;
+	min-height: 80vh;
 	border-radius: 8px;
 	color: white;
 	background-color: rgba(24, 24, 24, 0.75);
