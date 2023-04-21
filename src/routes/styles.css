@@ -40,6 +40,7 @@ main {
 	color: white;
 	background-color: rgba(24, 24, 24, 0.75);
 	backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
 	margin-top: 32px;
 	stroke-width: 1px;
 	stroke: gray;
