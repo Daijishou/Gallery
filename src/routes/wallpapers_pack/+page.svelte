@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 	import { goto } from '$app/navigation';
 	import { rawSourceUri } from '../../constants';
 	import WallpapersPackDetail from './WallpapersPackDetail.svelte';
@@ -25,12 +26,12 @@
 			} catch (error) {
 				console.error(error);
 				alert(error);
-				goto("/")
+				goto(`${base}/`);
 			}
 		}
 		else {
-			alert("error");
-			goto("/")
+			// alert("error");
+			goto(`${base}/`);
 		}
 	});
 	

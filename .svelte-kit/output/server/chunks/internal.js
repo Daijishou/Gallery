@@ -1,14 +1,5 @@
 import { c as create_ssr_component, a as setContext, v as validate_component, m as missing_component } from "./index.js";
-let base = "";
-let assets = base;
-const initial = { base, assets };
-function reset() {
-  base = initial.base;
-  assets = initial.assets;
-}
-function set_assets(path) {
-  assets = initial.assets = path;
-}
+import "./paths.js";
 let public_env = {};
 function set_private_env(environment) {
 }
@@ -107,7 +98,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="viewport" content="width=device-width" />\n		' + head + '\n	</head>\n\n	<body data-sveltekit-preload-data="hover">\n		<div id="root">' + body + "</div>\n	</body>\n</html>\n",
+    app: ({ head, body, assets, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="viewport" content="width=device-width" />\n		' + head + '\n	</head>\n\n	<body data-sveltekit-preload-data="hover">\n		<div id="root">' + body + "</div>\n	</body>\n</html>\n",
     error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -168,20 +159,16 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1rdz8ai"
+  version_hash: "1h1qb80"
 };
 function get_hooks() {
   return {};
 }
 export {
-  assets as a,
-  base as b,
-  set_assets as c,
-  set_building as d,
-  set_private_env as e,
+  set_building as a,
+  set_private_env as b,
   get_hooks as g,
   options as o,
   public_env as p,
-  reset as r,
   set_public_env as s
 };

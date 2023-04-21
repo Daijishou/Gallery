@@ -1,6 +1,7 @@
 <script>
 	// import { useNavigate } from "svelte-navigator";
-	import { goto } from '$app/navigation';
+	// import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { rawSourceUri } from '../../constants';
 	export let index;
 	export let slug;
@@ -16,7 +17,7 @@
 </script>
 
 <article>
-	<p><a class="back-link" href="./">&laquo; back to list</a></p>
+	<p><a class="back-link" href="{base}/">&laquo; back to list</a></p>
 	{#if index.previewThumbnailFilename}
     	<img class="thubnail" src="{rawSourceUri}/themes/platform_wallpapers_packs/{slug}/{index.previewThumbnailFilename}" alt="{index.platformWallpapersPackName}"/>
 	{:else}
