@@ -15,8 +15,8 @@
 	}
 	img.thumbnail {
 		object-fit: cover;
-		width: 96px;
-		height: 96px;
+		width: 80px;
+		height: 80px;
 		margin-top: 12px;
 		border-radius: 8px;
 		box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
