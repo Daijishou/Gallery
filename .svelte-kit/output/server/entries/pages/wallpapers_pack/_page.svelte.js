@@ -13,7 +13,7 @@ const WallpapersPackDetail = create_ssr_component(($$result, $$props, $$bindings
   if ($$props.slug === void 0 && $$bindings.slug && slug !== void 0)
     $$bindings.slug(slug);
   $$result.css.add(css);
-  return `<article class="svelte-13388qk"><p><a class="back-link svelte-13388qk" href="../">« back to list</a></p>
+  return `<article class="svelte-13388qk"><p><a class="back-link svelte-13388qk" href="./">« back to list</a></p>
 	${index.previewThumbnailFilename ? `<img class="thubnail svelte-13388qk" src="${escape(rawSourceUri, true) + "/themes/platform_wallpapers_packs/" + escape(slug, true) + "/" + escape(index.previewThumbnailFilename, true)}"${add_attribute("alt", index.platformWallpapersPackName, 0)}>` : `<img class="thubnail svelte-13388qk"${add_attribute("alt", index.platformWallpapersPackName, 0)}>`}
 	<h1>${escape(index.name ? index.name : "Loading…")}</h1>
 	${index.name ? `<p>Has default wallpaper: ${escape(index.hasDefaultWallpaper ? "yes" : "no")}${escape(index.isNSFW ? " • NSFW" : "")}</p>

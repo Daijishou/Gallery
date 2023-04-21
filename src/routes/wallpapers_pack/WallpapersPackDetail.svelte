@@ -16,7 +16,7 @@
 </script>
 
 <article>
-	<p><a class="back-link" href="../">&laquo; back to list</a></p>
+	<p><a class="back-link" href="./">&laquo; back to list</a></p>
 	{#if index.previewThumbnailFilename}
     	<img class="thubnail" src="{rawSourceUri}/themes/platform_wallpapers_packs/{slug}/{index.previewThumbnailFilename}" alt="{index.platformWallpapersPackName}"/>
 	{:else}

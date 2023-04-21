@@ -24,10 +24,12 @@
 				index = await fetch(`${rawSourceUri}/themes/platform_wallpapers_packs/${slug}/index.json`).then(r => r.json());
 			} catch (error) {
 				console.error(error);
+				alert(error);
 				goto("/")
 			}
 		}
 		else {
+			alert("error");
 			goto("/")
 		}
 	});
