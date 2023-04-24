@@ -4,6 +4,6 @@ export const index = 0;
 export const component = async () => (await import('../entries/pages/_layout.svelte.js')).default;
 export { universal };
 export const universal_id = "src/routes/+layout.js";
-export const imports = ["_app/immutable/entry/_layout.svelte.32217a18.js","_app/immutable/chunks/index.90227162.js","_app/immutable/entry/_layout.js.984db11e.js","_app/immutable/chunks/_layout.da46b06b.js"];
-export const stylesheets = ["_app/immutable/assets/_layout.ca7751aa.css"];
+export const imports = ["_app/immutable/entry/_layout.svelte.a7bea48f.js","_app/immutable/chunks/index.90227162.js","_app/immutable/entry/_layout.js.984db11e.js","_app/immutable/chunks/_layout.da46b06b.js"];
+export const stylesheets = ["_app/immutable/assets/_layout.6834d23e.css"];
 export const fonts = [];
