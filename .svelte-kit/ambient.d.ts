@@ -46,7 +46,6 @@ declare module '$env/static/private' {
 	export const NO_AT_BRIDGE: string;
 	export const npm_config_globalconfig: string;
 	export const EDITOR: string;
-	export const DBUS_STARTER_BUS_TYPE: string;
 	export const PWD: string;
 	export const XDG_SESSION_DESKTOP: string;
 	export const LOGNAME: string;
@@ -67,7 +66,6 @@ declare module '$env/static/private' {
 	export const LS_COLORS: string;
 	export const XDG_CURRENT_DESKTOP: string;
 	export const npm_package_version: string;
-	export const VTE_VERSION: string;
 	export const GIT_ASKPASS: string;
 	export const INVOCATION_ID: string;
 	export const MANAGERPID: string;
@@ -90,7 +88,6 @@ declare module '$env/static/private' {
 	export const SHLVL: string;
 	export const PAGER: string;
 	export const QT_IM_MODULE: string;
-	export const DBUS_STARTER_ADDRESS: string;
 	export const npm_config_user_agent: string;
 	export const npm_execpath: string;
 	export const XDG_RUNTIME_DIR: string;
@@ -164,7 +161,6 @@ declare module '$env/dynamic/private' {
 		NO_AT_BRIDGE: string;
 		npm_config_globalconfig: string;
 		EDITOR: string;
-		DBUS_STARTER_BUS_TYPE: string;
 		PWD: string;
 		XDG_SESSION_DESKTOP: string;
 		LOGNAME: string;
@@ -185,7 +181,6 @@ declare module '$env/dynamic/private' {
 		LS_COLORS: string;
 		XDG_CURRENT_DESKTOP: string;
 		npm_package_version: string;
-		VTE_VERSION: string;
 		GIT_ASKPASS: string;
 		INVOCATION_ID: string;
 		MANAGERPID: string;
@@ -208,7 +203,6 @@ declare module '$env/dynamic/private' {
 		SHLVL: string;
 		PAGER: string;
 		QT_IM_MODULE: string;
-		DBUS_STARTER_ADDRESS: string;
 		npm_config_user_agent: string;
 		npm_execpath: string;
 		XDG_RUNTIME_DIR: string;

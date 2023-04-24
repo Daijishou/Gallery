@@ -60,7 +60,7 @@
 
 <style>
 	#title {
-		padding: 24px 32px 0px 32px;
+		padding: 12px 32px 0px 32px;
 		font-size: x-large;
 	}
 
